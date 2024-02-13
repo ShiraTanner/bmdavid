@@ -35,14 +35,15 @@
 
                 <hr style="border: none; border-bottom: 1px solid #cccccc; background: unset; height: 1px; width: 100%; margin: 20px 0;">
                 <div>
-                    <p class="text-primary">
+                    <p class="text-primary text-center"
+                       style="font-family: 'playfair display', georgia, 'times new roman', serif !important;">
                         KINDLY REPLY<br>
                         <span style="font-size:13px">BEFORE </span>23/12/2022<br>
                     </p>
                 </div>
                 <hr style="border: none; border-bottom: 1px solid #cccccc; background: unset; height: 1px; width: 100%; margin: 20px 0;">
                 <div>
-                    <div class="es-p10b es-p5l">
+                    <div class="es-p10b">
                         <label for="name" class="text-primary">Names of those who will attend</label>
                         <textarea
                                 rows="3" id="name"
@@ -53,11 +54,13 @@
                         <span visible-when-invalid="valueMissing" validation-for="name"></span>
                     </div>
                 </div>
-                <tr>
-                    <td align="left"
-                        class="es-p10b es-p5l">
-                        <label for="input_textarea_3" class="text-primary">Names of those who won't be able to
-                            attend</label>
+                <div>
+                    <div class="es-p10b">
+
+
+                        <label for="input_textarea_3" class="text-primary">
+                            Names of those who won't be able to attend
+                        </label>
                         <textarea
                                 rows="3"
                                 id="input_textarea_3"
@@ -66,29 +69,30 @@
                                 class="text-primary"
                                 maxlength="1000"></textarea>
                         <span visible-when-invalid="valueMissing" validation-for="input_textarea_3"></span>
-                    </td>
-                </tr>
+                    </div>
+                </div>
+
                 <div>
-                <span
-                        class="es-button-border msohide"
-                        style="background: #dad5c3;border-width: 0px 0px 1px;border-style: solid;border-color: #000000 #000000 #666666;"
-                >
-                    <button type="submit" class="es-button"
-                            style="background: #dad5c3; font-size: 16px;">Submit</button>
-                </span>
+                    <span
+                            class="es-button-border msohide"
+                            style="background: #dad5c3;border-width: 0px 0px 1px;border-style: solid;border-color: #000000 #000000 #666666;"
+                    >
+                        <button type="submit" class="es-button"
+                                style="background: #dad5c3; font-size: 16px;">Submit</button>
+                    </span>
+                </div>
+                <div submit-success>
+                    <template type="amp-mustache">
+                        <p> Thank you! We saved your reply!</p>
+                    </template>
+                </div>
+                <div submit-error>
+                    <template type="amp-mustache">
+                        <p>Please enter your reply</p>
+                    </template>
                 </div>
             </div>
 
-            <div submit-success>
-                <template type="amp-mustache">
-                    <p> Thank you! We saved your reply!</p>
-                </template>
-            </div>
-            <div submit-error>
-                <template type="amp-mustache">
-                    <p>Please enter your reply</p>
-                </template>
-            </div>
         </form>
     </div>
 </div>

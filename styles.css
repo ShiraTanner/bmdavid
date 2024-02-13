@@ -15,12 +15,17 @@ body {
     font-size: 1.2rem;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .root {
     width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: start;
+    height: fit-content;
 }
 
 .container {
@@ -44,6 +49,11 @@ body {
 
 form {
     flex: 1;
+    height: 100%;
+}
+
+#hide-form-1668162719002 {
+    height: 100%;
 }
 
 @media only screen and (max-width: 850px) {
@@ -62,7 +72,8 @@ form {
     }
 
     #hide-form-1668162719002 {
-        height: 70vh;
+        height: 120%;
+        padding-bottom: 90px;
     }
     .container {
         background: transparent;
